@@ -1,0 +1,84 @@
+{
+	"compiler": {
+		"version": "0.8.0+commit.c7dfd78e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "participants",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "username",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "userId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "enum participant.user_type",
+						"name": "utype",
+						"type": "uint8"
+					},
+					{
+						"internalType": "address",
+						"name": "user_address",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "money",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/member.sol": "participant"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/member.sol": {
+			"keccak256": "0x68d912ba3283679b2828da24fafd22473218064749eedea1ffe7237f1956b956",
+			"urls": [
+				"bzz-raw://691358a680f33984c1b66530a29e57d9902a59548527ef121050d690e1c87b11",
+				"dweb:/ipfs/QmNnW79Nd6pyhTwN6v2kK7Acb85qGc9vaqqF6QqVfFC8Qo"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,84 @@
+{
+	"compiler": {
+		"version": "0.8.0+commit.c7dfd78e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "Items",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "product_name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "productId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "itemOwner",
+						"type": "address"
+					},
+					{
+						"internalType": "enum Item.state",
+						"name": "productState",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint256",
+						"name": "cost",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/item.sol": "Item"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/item.sol": {
+			"keccak256": "0x76f8e954b99eb09a2ddf9390d67b39ae2cc22fb2c4f34ac3bb1e0e7be97c902b",
+			"urls": [
+				"bzz-raw://cb035d0275e5eb02758ecbc23b6a3fb4771b5a3af75d48b7f456b6be82257bb0",
+				"dweb:/ipfs/QmUoXKMUw93jjHexzQYZ3QPxEtmUjMznhYvPk1cnZqJMcp"
+			]
+		}
+	},
+	"version": 1
+}

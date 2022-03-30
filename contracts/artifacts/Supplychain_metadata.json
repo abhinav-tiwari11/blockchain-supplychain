@@ -1,0 +1,478 @@
+{
+	"compiler": {
+		"version": "0.8.0+commit.c7dfd78e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "upc",
+						"type": "uint256"
+					}
+				],
+				"name": "checked",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "upc",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "_address",
+						"type": "address"
+					}
+				],
+				"name": "itemcreated",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "upc",
+						"type": "uint256"
+					}
+				],
+				"name": "openForSale",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "upc",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "_address",
+						"type": "address"
+					}
+				],
+				"name": "orderPlaced",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "upc",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "_address",
+						"type": "address"
+					}
+				],
+				"name": "received",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "upc",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "_address",
+						"type": "address"
+					}
+				],
+				"name": "shipped",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "Items",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "product_name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "productId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "itemOwner",
+						"type": "address"
+					},
+					{
+						"internalType": "enum Item.state",
+						"name": "productState",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint256",
+						"name": "cost",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_product_name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "cost",
+						"type": "uint256"
+					}
+				],
+				"name": "addItem",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_uname",
+						"type": "string"
+					}
+				],
+				"name": "addManufacturer",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_uname",
+						"type": "string"
+					}
+				],
+				"name": "addSupplier",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_uname",
+						"type": "string"
+					}
+				],
+				"name": "addtransporter",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_id",
+						"type": "uint256"
+					}
+				],
+				"name": "avaliableforsale",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_id",
+						"type": "uint256"
+					}
+				],
+				"name": "currentState",
+				"outputs": [
+					{
+						"internalType": "enum Item.state",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_id",
+						"type": "uint256"
+					}
+				],
+				"name": "order",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "participants",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "username",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "userId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "enum participant.user_type",
+						"name": "utype",
+						"type": "uint8"
+					},
+					{
+						"internalType": "address",
+						"name": "user_address",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "money",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_id",
+						"type": "uint256"
+					}
+				],
+				"name": "personDetail",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "username",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "userId",
+								"type": "uint256"
+							},
+							{
+								"internalType": "enum participant.user_type",
+								"name": "utype",
+								"type": "uint8"
+							},
+							{
+								"internalType": "address",
+								"name": "user_address",
+								"type": "address"
+							},
+							{
+								"internalType": "uint256",
+								"name": "money",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct participant.participant",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_id",
+						"type": "uint256"
+					}
+				],
+				"name": "productDetail",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "product_name",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "productId",
+								"type": "uint256"
+							},
+							{
+								"internalType": "address",
+								"name": "itemOwner",
+								"type": "address"
+							},
+							{
+								"internalType": "enum Item.state",
+								"name": "productState",
+								"type": "uint8"
+							},
+							{
+								"internalType": "uint256",
+								"name": "cost",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct Item.item",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "_transporter_address",
+						"type": "address"
+					}
+				],
+				"name": "ship_product",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/main.sol": "Supplychain"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/item.sol": {
+			"keccak256": "0x76f8e954b99eb09a2ddf9390d67b39ae2cc22fb2c4f34ac3bb1e0e7be97c902b",
+			"urls": [
+				"bzz-raw://cb035d0275e5eb02758ecbc23b6a3fb4771b5a3af75d48b7f456b6be82257bb0",
+				"dweb:/ipfs/QmUoXKMUw93jjHexzQYZ3QPxEtmUjMznhYvPk1cnZqJMcp"
+			]
+		},
+		"contracts/main.sol": {
+			"keccak256": "0xae83233ffe9edbb26420dbb05fa5600f0a94a4fbf5423ced39b6d8a4b1aa158d",
+			"urls": [
+				"bzz-raw://d7c3fc6b1f424c4826e5943fe9cc296734f8bb95cb0ccbcdfc66d9a5d32558c2",
+				"dweb:/ipfs/QmTTZg9pgN1SCWdDnAkj1UZdJEJiHHnKN1bz4MYKrkNEaK"
+			]
+		},
+		"contracts/member.sol": {
+			"keccak256": "0x68d912ba3283679b2828da24fafd22473218064749eedea1ffe7237f1956b956",
+			"urls": [
+				"bzz-raw://691358a680f33984c1b66530a29e57d9902a59548527ef121050d690e1c87b11",
+				"dweb:/ipfs/QmNnW79Nd6pyhTwN6v2kK7Acb85qGc9vaqqF6QqVfFC8Qo"
+			]
+		},
+		"contracts/modifier.sol": {
+			"keccak256": "0x61add92446df41d92a55d098d7a2209cd32d6a6bbddb4f393f01531d42ab80c3",
+			"urls": [
+				"bzz-raw://a1babab818169c9e36c009571006cdc875b68d3d1264de98752773c855460deb",
+				"dweb:/ipfs/QmctP6Jkjhv7miZ5AHTbfWmVHowZVxhXrsEz3qwBpjovDA"
+			]
+		},
+		"contracts/order.sol": {
+			"keccak256": "0x15f2e14fef6a06b18f77a778f22474a6b889f33b890dff758b105d6336516e2c",
+			"urls": [
+				"bzz-raw://bc8febf3286a1da9d470b65cf8d816f4ec851f3d5190512043c7abd8323149ab",
+				"dweb:/ipfs/QmZM1Z2AnF8SQaw8j1AoshAcu375ALvD6HpEqFYK3UhstB"
+			]
+		}
+	},
+	"version": 1
+}
